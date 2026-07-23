@@ -69,29 +69,25 @@ El sistema permite además:
 
 ---
 
-## 🧱 Arquitectura del proyecto
+## 🧱 Sobre el proyecto
 
-El proyecto está organizado en una **arquitectura por capas**, donde cada módulo tiene una responsabilidad específica:
+Desarrollado sobre una base provista por la cátedra, que incluía la
+arquitectura en capas (transport, services, persistence, utilities),
+los templates y la capa de consumo de la API.
 
-- **Transport:** consumo de la API externa  
-- **Services:** lógica de negocio  
-- **Persistence:** acceso a la base de datos  
-- **Utilities:** transformación de datos para las vistas  
-
-Esta separación permite mantener el código organizado y facilitar futuras modificaciones.
+Mi trabajo consistió en implementar la lógica de la galería en `views.py`
+y `services.py`, el coloreado de las tarjetas según el estado del
+personaje, y los tres módulos opcionales del enunciado: buscador, inicio
+de sesión y sistema de favoritos.
 
 ---
 
 ## ▶️ Ejecución del proyecto
 
-1. Instalar Python  
-2. Instalar dependencias:
-```pip install-r requirements.txt```
-
-3. Ejecutar el servidor
-```python manage.py runserver 3000```
-4. Abrir en el navegador
-```http://localhost:3000```
+1. Instalar Python
+2. Instalar dependencias: `pip install -r requirements.txt`
+3. Ejecutar el servidor: `python manage.py runserver 3000`
+4. Abrir en el navegador: `http://localhost:3000`
 
 ---
 
