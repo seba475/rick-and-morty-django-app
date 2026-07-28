@@ -1,111 +1,77 @@
 # 🧪 Buscador de personajes – Rick & Morty
 
-Aplicación web desarrollada con **Django** que permite explorar personajes de la serie **Rick & Morty** utilizando su API pública.  
-El proyecto fue realizado como trabajo práctico para la materia **Introducción a la Programación**.
+Aplicación web desarrollada con **Django** que permite explorar personajes de
+la serie **Rick & Morty** usando su API pública. Realizado como trabajo
+práctico para la materia **Introducción a la Programación** (UNGS).
 
 ---
 
-## 📝 Descripción del proyecto
+## 📝 Descripción
 
-La aplicación consume datos de la **Rick & Morty API** y muestra los personajes en una galería de tarjetas.  
-Cada tarjeta incluye información relevante del personaje y **cambia su apariencia según el estado** del mismo.
+La aplicación consume datos de la Rick & Morty API y muestra los personajes en
+una galería de tarjetas. Cada tarjeta incluye información del personaje y cambia
+su borde de color según su estado (vivo, muerto o desconocido).
 
-El sistema permite además:
+---
 
-- 🔍 Buscar personajes por nombre  
-- 🔐 Iniciar sesión  
-- ⭐ Gestionar una lista de favoritos  
+## 📸 Capturas
 
-## 📸 Capturas de la aplicación
-
-### 🖼️ Galería de personajes
+### Galería de personajes
 <p align="center">
   <img src="img/galeria.png" width="700">
 </p>
 
----
-
-### 🔍 Buscador en funcionamiento
+### Buscador en funcionamiento
 <p align="center">
   <img src="img/buscador.png" width="700">
 </p>
 
----
-
-### ⭐ Personajes favoritos
+### Personajes favoritos
 <p align="center">
   <img src="img/favoritos.png" width="700">
 </p>
 
+---
+
+## 🚀 Funcionalidades
+
+- Galería de personajes obtenidos desde la API, con imagen, nombre, estado,
+  última ubicación y primer episodio.
+- Borde de color según el estado del personaje: verde (vivo), rojo (muerto),
+  naranja (desconocido).
+- Buscador de personajes por nombre.
+- Inicio de sesión básico.
+- Sistema de favoritos para usuarios autenticados.
 
 ---
 
-## 🚀 Funcionalidades implementadas
+## 🛠️ Tecnologías
 
-- 🖼️ **Visualización de personajes** obtenidos desde la API  
-- 🎨 **Galería dinámica** con tarjetas que muestran:
-  - Imagen  
-  - Nombre  
-  - Estado  
-  - Última ubicación  
-  - Primer episodio  
-- 🟩 **Borde de color según estado**:
-  - Verde → vivo  
-  - Rojo → muerto  
-  - Naranja → desconocido  
-- 🔍 **Buscador** de personajes por nombre  
-- 🔐 **Inicio de sesión básico**  
-- ⭐ **Sistema de favoritos** para usuarios autenticados  
-
----
-
-## 🛠️ Tecnologías utilizadas
-
-- Python  
-- Django  
-- SQLite  
-- HTML / CSS  
-- Bootstrap  
+- Python
+- Django
 
 ---
 
 ## 🧱 Sobre el proyecto
 
 Desarrollado sobre una base provista por la cátedra, que incluía la
-arquitectura en capas (transport, services, persistence, utilities),
-los templates y la capa de consumo de la API.
+arquitectura en capas (transport, services, persistence, utilities), los
+templates y la capa de consumo de la API.
 
-Mi trabajo consistió en implementar la lógica de la galería en `views.py`
-y `services.py`, el coloreado de las tarjetas según el estado del
-personaje, y los tres módulos opcionales del enunciado: buscador, inicio
-de sesión y sistema de favoritos.
+Mi trabajo consistió en implementar la lógica de la galería en `views.py` y
+`services.py`, el coloreado de las tarjetas según el estado del personaje, y
+los tres módulos opcionales del enunciado: buscador, inicio de sesión y sistema
+de favoritos.
 
 ---
 
-## ▶️ Ejecución del proyecto
+## ▶️ Ejecución
 
 1. Instalar Python
 2. Instalar dependencias: `pip install -r requirements.txt`
 3. Ejecutar el servidor: `python manage.py runserver 3000`
 4. Abrir en el navegador: `http://localhost:3000`
 
----
-
-## 🔐 Usuario de prueba
-
-Para acceder a las funcionalidades de autenticación:
-
-- **usuario:** admin  
-- **contraseña:** admin  
-
----
-
-## 🎯 Objetivo del trabajo
-
-El objetivo del proyecto fue aplicar conceptos de desarrollo web utilizando Django, incluyendo:
-
-- Consumo de APIs externas  
-- Arquitectura en capas  
-- Manejo de vistas y templates  
-- Autenticación básica  
-- Persistencia de datos
+### Usuario de prueba
+- **usuario:** admin
+- **contraseña:** admin
